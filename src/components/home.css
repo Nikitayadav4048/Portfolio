@@ -1,0 +1,217 @@
+/* General Reset */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 5%;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #ff00ff;
+  background-color: transparent; /* Ensure background is transparent on hover */
+}
+
+/* Main Content Styling */
+.home-container {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  /* padding: 15px; */
+  padding-top: 15px;
+}
+
+/* Gradient and Highlight Colors */
+.text-gradient {
+  background: linear-gradient(45deg, #ff00ff, #9900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-highlight {
+  color: #ff00ff;
+}
+
+.profile-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-container img {
+  border: 4px solid #ff00ff;
+  /*Primarybordercolor*/border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+   /* Softer shadow */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.neon-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff00ff, #9900ff);
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.8;
+}
+
+button {
+  background-color: #ff00ff; /* Primary color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  color: white; /* Maintain text color on hover */
+  background-color: transparent !important; /* Ensure background is transparent on hover */
+  transform: translateY(-3px);
+}
+
+/* Social Icon Hover Effect */
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff00ff; /* Lighter primary shade on hover */
+  background-color: transparent !important; /* Ensure background is transparent on hover */
+}
+
+.text-gray-400:hover {
+  background-color: transparent !important; /* Force transparent background for social icons on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar a {
+    display: block;
+    color: #ffffff; /* Primary color */
+    padding: 8px;
+    text-align: center;
+  }
+
+  .home-container {
+    text-align: center;
+  }
+
+  .profile-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        display: none; /* Hides the image on smaller screens */
+    }
+
+    .home-container {
+        flex-direction: column; /* Stack elements */
+        text-align: center;
+    }
+}
+
+.profile-container img {
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #ff00ff, #9900ff);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+}
+
+.about-image-wrapper img {
+    border-radius: 15px;
+    padding: 3px;
+    box-shadow: 0 0 12px rgba(255, 0, 255, 0.3);
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.navbar.animate-slideIn {
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes nameGlow {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #9900ff;
+  }
+  50% {
+    transform: translateY(-5px);
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #9900ff;
+  }
+}
+
+.name-animate {
+  animation: nameGlow 2.5s ease-in-out infinite;
+  display: inline-block;
+}
