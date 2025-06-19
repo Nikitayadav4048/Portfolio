@@ -382,7 +382,7 @@ const Home = () => {
             <i className="fab fa-linkedin"></i>
           </a>
           <a
-            href="mailto:nikita@example.com"
+            href="mailto:nikitayadav4048@gmail.com"
             className="text-gray-400 text-2xl transition hover:text-highlight animate-float delay-400"
           >
             <i className="fas fa-envelope"></i>

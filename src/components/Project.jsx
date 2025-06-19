@@ -125,7 +125,7 @@ const projectsData = [
     title: 'Task Track',
     description: 'A task tracking application that helps users manage their daily tasks. Features include task creation, editing, and completion tracking. Built with React, HTML, CSS, and JavaScript.',
     image: tasks, // Update with your image path
-    link: 'https://github.com/Nikitayadav4048/task-track',
+    link: 'https://yadavnikita-tasktrack.netlify.app/',
     repo: 'https://github.com/Nikitayadav4048/TaskTrack', // GitHub link
     technologies: [
       { icon: <FaReact /> },
