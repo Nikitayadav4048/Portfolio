@@ -115,6 +115,7 @@
   background: #333;
   color: white;
   transition: all 0.3s ease-in-out;
+  cursor: none;
 }
 
 .contact-form input:focus,
@@ -131,7 +132,7 @@
   border-radius: 8px;
   background: linear-gradient(45deg, #ff00ff, #9900ff);
   color: white;
-  cursor: pointer;
+  cursor: none;
   transition: all 0.3s ease-in-out;
 }
 

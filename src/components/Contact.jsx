@@ -66,32 +66,12 @@ import './contact.css';
 
 const Contact = () => {
   const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs.sendForm('nikitayadav4048', 'template_2gz8ppc', form.current, '_A-GLho6diHC-AcqR')
-  //     .then((result) => {
-  //         alert('Message sent successfully!');
-  //         form.current.reset(); // Clears the form after sending
-  //     }, (error) => {
-  //         alert('Failed to send message. Please try again.');
-  //     });
-  // };
-
-
-
 const sendEmail = (e) => {
   e.preventDefault();
 
   emailjs.sendForm('nikitayadav4048', 'template_2gz8ppc', form.current, '_A-GLho6diHC-AcqR')
     .then((result) => {
-        // Swal.fire({
-        //     icon: 'success',
-        //     title: 'Message Sent!',
-        //     text: 'Thank you for reaching out. I will get back to you soon.',
-        //     confirmButtonColor: '#ff00ff',
-        // });
-        Swal.fire({
+     Swal.fire({
     icon: 'success',
     title: 'Message Sent!',
     text: 'Thank you for reaching out!',

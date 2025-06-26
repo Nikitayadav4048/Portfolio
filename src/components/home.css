@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 body {
@@ -6,9 +6,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
+} */
 
-/* Navbar Styling */
+/* Navbar Styling 
 .navbar {
   background-color: #121212;
   position: sticky;
@@ -33,18 +33,18 @@ body {
 
 .navbar a:hover {
   color: #ff00ff;
-  background-color: transparent; /* Ensure background is transparent on hover */
+  background-color: transparent; /* Ensure background is transparent on hover
 }
 
-/* Main Content Styling */
+/* Main Content Styling
 .home-container {
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* White text */
-  /* padding: 15px; */
+  background-color: #121212; /* Dark background
+  color: #ffffff; /* White text 
+  /* padding: 15px; 
   padding-top: 15px;
 }
 
-/* Gradient and Highlight Colors */
+/* Gradient and Highlight Colors 
 .text-gradient {
   background: linear-gradient(45deg, #ff00ff, #9900ff);
   -webkit-background-clip: text;
@@ -63,9 +63,9 @@ body {
 
 .profile-container img {
   border: 4px solid #ff00ff;
-  /*Primarybordercolor*/border-radius: 50%;
+  /*Primarybordercolorborder-radius: 50%;
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
-   /* Softer shadow */
+   /* Softer shadow 
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -86,7 +86,7 @@ body {
 }
 
 button {
-  background-color: #ff00ff; /* Primary color */
+  background-color: #ff00ff; /* Primary color 
   border: none;
   color: white;
   padding: 10px 20px;
@@ -101,26 +101,26 @@ button {
 }
 
 button:hover {
-  color: white; /* Maintain text color on hover */
-  background-color: transparent !important; /* Ensure background is transparent on hover */
+  color: white; /* Maintain text color on hover 
+  background-color: transparent !important; /* Ensure background is transparent on hover 
   transform: translateY(-3px);
 }
 
-/* Social Icon Hover Effect */
+/* Social Icon Hover Effect 
 a {
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #ff00ff; /* Lighter primary shade on hover */
-  background-color: transparent !important; /* Ensure background is transparent on hover */
+  color: #ff00ff; /* Lighter primary shade on hover 
+  background-color: transparent !important; /* Ensure background is transparent on hover 
 }
 
 .text-gray-400:hover {
-  background-color: transparent !important; /* Force transparent background for social icons on hover */
+  background-color: transparent !important;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .navbar ul {
     display: none;
@@ -128,7 +128,7 @@ a:hover {
 
   .navbar a {
     display: block;
-    color: #ffffff; /* Primary color */
+    color: #ffffff; /* Primary color 
     padding: 8px;
     text-align: center;
   }
@@ -144,11 +144,11 @@ a:hover {
 
 @media (max-width: 768px) {
     .profile-container {
-        display: none; /* Hides the image on smaller screens */
+        display: none; /* Hides the image on smaller screens 
     }
 
     .home-container {
-        flex-direction: column; /* Stack elements */
+        flex-direction: column; /* Stack elements
         text-align: center;
     }
 }
@@ -214,4 +214,260 @@ a:hover {
 .name-animate {
   animation: nameGlow 2.5s ease-in-out infinite;
   display: inline-block;
+}
+
+
+
+/* Import Font Awesome */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  cursor: none; /* Hides the default mouse cursor */
+
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar List */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Links */
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: none;
+}
+
+.navbar a:hover {
+  color: #ff00ff;
+  background-color: transparent;
+}
+
+/* Mobile Menu Enhancements */
+.bg-dark {
+  background-color: #121212;
+}
+
+.hover\:text-highlight:hover {
+  color: #ff00ff;
+}
+
+/* Mobile menu link layout */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .mobile-menu ul,
+  .mobile-menu li {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+.home-container {
+  background-color: #121212;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(45deg, #ff00ff, #9900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Highlight Text */
+.text-highlight {
+  color: #ff00ff;
+}
+
+/* Profile Styling */
+.profile-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-container img {
+  border: 4px solid #ff00ff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+}
+
+/* Neon Effect */
+.neon-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff00ff, #9900ff);
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.8;
+}
+
+/* Button Styling */
+button {
+  background-color: #ff00ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: transparent !important;
+  transform: translateY(-3px);
+}
+
+/* Social Icon Hover Effect */
+a {
+  transition: color 0.3s;
+  cursor: none;
+}
+
+a:hover {
+  color: #ff00ff;
+  background-color: transparent !important;
+}
+
+.text-gray-400:hover {
+  background-color: transparent !important;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .profile-container {
+    display: none;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Slide In */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+.navbar.animate-slideIn {
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Glow Animation */
+@keyframes nameGlow {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #9900ff;
+  }
+  50% {
+    transform: translateY(-5px);
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #9900ff;
+  }
+}
+
+.name-animate {
+  animation: nameGlow 2.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #ff00ff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+}
+
+@keyframes slideInCustom {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInCustom {
+  animation: slideInCustom 0.4s ease-out;
 }

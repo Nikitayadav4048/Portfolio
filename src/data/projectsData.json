@@ -1,0 +1,29 @@
+[
+  {
+    "id": 3,
+    "title": "Weather App",
+    "description": "A weather application that provides current weather conditions and forecasts for different locations. Built using HTML, CSS, and JavaScript, and integrates with a weather API.",
+    "image": "weatherapp2.png",
+    "link": "https://nikita-yadav-weatherapp.netlify.app",
+    "repo": "https://github.com/Nikitayadav4048/weather-app",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 4,
+    "title": "Add to Cart",
+    "description": "An e-commerce feature that allows users to add items to their cart. Built using HTML, CSS, and JavaScript, this project includes dynamic item addition and price calculation.",
+    "image": "cart.png",
+    "link": "https://nikita-yadav-addtocart.netlify.app",
+    "repo": "https://github.com/Nikitayadav4048/add-to-cart",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 5,
+    "title": "Task Track",
+    "description": "A task tracking application that helps users manage their daily tasks. Features include task creation, editing, and completion tracking. Built with React, HTML, CSS, and JavaScript.",
+    "image": "tasks.png",
+    "link": "https://yadavnikita-tasktrack.netlify.app/",
+    "repo": "https://github.com/Nikitayadav4048/TaskTrack",
+    "technologies": ["react", "html", "css", "js"]
+  }
+]

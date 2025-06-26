@@ -1,69 +1,6 @@
 .projects-container {
-  background-color: #000000; /* Black background */
+  background-color: #000000;
   padding: 60px 20px;
-  color: #ffffff;
-}
-
-.project-card {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
-.project-card img {
-  border-radius: 10px;
-  border: 4px solid #ff00ff; /* Neon purple border */
-}
-
-.technologies span {
-  background-color: #333;
-  padding: 5px 10px;
-  border-radius: 15px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-}
-
-a {
-  transition: color 0.3s, background 0.3s;
-  text-decoration: none; /* Remove underline for links */
-}
-
-a:hover {
-  color: #ffffff; /* White text on hover */
-  background: #9900ff; /* Darker purple background on hover */
-}
-
-/* Button Styling */
-.project-card .flex a {
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.project-card .flex a:first-child {
-  background-color: #ff00ff; /* Neon purple for 'View Project' */
-  color: #ffffff;
-}
-
-.project-card .flex a:first-child:hover {
-  background-color: #9900ff; /* Darker purple on hover */
-  color: #ffffff;
-}
-
-.project-card .flex a:last-child {
-  background-color: #444444; /* Grey for 'GitHub Repo' */
-  color: #ffffff;
-}
-
-.project-card .flex a:last-child:hover {
-  background-color: #333333; /* Darker grey on hover */
   color: #ffffff;
 }
 
@@ -71,4 +8,74 @@ a:hover {
   background: linear-gradient(45deg, #ff00ff, #9900ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Core card styling with alignment */
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  border-radius: 10px;
+  border: 4px solid #ff00ff;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.tech-pill {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.button-row a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-view {
+  background-color: #ff00ff;
+  color: #ffffff;
+}
+
+.btn-view:hover {
+  background-color: #9900ff;
+}
+
+.btn-repo {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.btn-repo:hover {
+  background-color: #333333;
 }

@@ -1,0 +1,11 @@
+[
+  { "name": "HTML", "icon": "fab fa-html5", "description": "Markup language for creating web pages" },
+  { "name": "CSS", "icon": "fab fa-css3-alt", "description": "Style sheet language for styling web pages" },
+  { "name": "JavaScript", "icon": "fab fa-js-square", "description": "Programming language for web development" },
+  { "name": "React", "icon": "fab fa-react", "description": "JavaScript library for building user interfaces" },
+  { "name": "Tailwind", "icon": "fas fa-code", "description": "Utility-first CSS framework" },
+  { "name": "Bootstrap", "icon": "fab fa-bootstrap", "description": "Popular CSS framework for responsive design" },
+  { "name": "Java", "icon": "fab fa-java", "description": "Object-oriented programming language" },
+  { "name": "MYSQL", "icon": "fas fa-database", "description": "Structured Query Language for managing databases" },
+  { "name": "DBMS", "icon": "fas fa-server", "description": "Database Management Systems" }
+]
