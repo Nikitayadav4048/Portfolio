@@ -70,7 +70,8 @@
 }
 
 .contact-button:hover {
-    background: linear-gradient(45deg, #9900ff, #ff00ff);
+    background-color: linear-gradient(45deg, #9900ff, #ff00ff);
+    color: white;
     transform: translateY(-3px);
 }
 
