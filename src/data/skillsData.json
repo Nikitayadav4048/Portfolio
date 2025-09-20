@@ -5,6 +5,9 @@
   { "name": "React", "icon": "fab fa-react", "description": "JavaScript library for building user interfaces" },
   { "name": "Tailwind", "icon": "fas fa-code", "description": "Utility-first CSS framework" },
   { "name": "Bootstrap", "icon": "fab fa-bootstrap", "description": "Popular CSS framework for responsive design" },
+  { "name": "Node.js", "icon": "fab fa-node-js", "description": "JavaScript runtime for server-side development" },
+  { "name": "Express.js", "icon": "fas fa-code", "description": "Web framework for Node.js" },
+  { "name": "MongoDB", "icon": "fas fa-leaf", "description": "NoSQL database for modern applications" },
   { "name": "Java", "icon": "fab fa-java", "description": "Object-oriented programming language" },
   { "name": "MYSQL", "icon": "fas fa-database", "description": "Structured Query Language for managing databases" },
   { "name": "DBMS", "icon": "fas fa-server", "description": "Database Management Systems" }

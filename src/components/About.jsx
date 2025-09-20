@@ -1,7 +1,6 @@
 import React from 'react';
 import './about.css';
-// import img from './Nikita2.jpeg'; 
-import img from '../assets/Nikita6.jpg' 
+import img from '../assets/Nikita6.jpg';
 
 const About = () => {
   return (
@@ -9,7 +8,7 @@ const About = () => {
       id="about"
       className="about-container flex flex-col items-center justify-center min-h-screen text-center lg:text-left bg-dark text-white p-6"
     >
-      <div className="about-content max-w-4xl flex flex-col lg:flex-row items-center gap-12">
+      <div className="about-content max-w-7xl flex flex-col lg:flex-row items-center gap-13">
         <div className="about-image-container lg:w-1/3">
           <div className="about-image-wrapper relative w-80 h-80 rounded-lg overflow-hidden shadow-lg mx-auto">
             <img
@@ -27,7 +26,7 @@ const About = () => {
             My name is <span className="text-highlight">Nikita Yadav</span> and I am currently pursuing my Bachelor of Computer Applications (BCA), 3rd year, at Sant Singaji Institute of Science and Management, Sandalpur.
           </p>
           <p className="text-gray-400 text-lg mt-4">
-            I am passionate about web development and have been learning various technologies including HTML, CSS, JavaScript, React, Tailwind, Bootstrap, Java, SQL, VS Code, Git, GitHub, and DBMS. My goal is to leverage these skills to create seamless and interactive web experiences.
+            I am passionate about web development and have been learning various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Tailwind, Bootstrap, Java, SQL, VS Code, Git, GitHub, and DBMS. My goal is to leverage these skills to create seamless and interactive web experiences.
           </p>
           <p className="text-gray-400 text-lg mt-4">
             As I continue my journey, I look forward to acquiring more knowledge and honing my abilities to make meaningful contributions to the tech industry.
@@ -35,7 +34,7 @@ const About = () => {
 
           <a
             href="#contact"
-            className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold rounded-lg hover:bg-gradient-to-l transition-all"
+            className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-bold rounded-lg hover:bg-gradient-to-l transition-all"
           >
             Contact
           </a>

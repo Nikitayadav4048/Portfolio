@@ -1,17 +1,17 @@
 import React from 'react';
 import './project.css';
 import data from '../../src/data/projectsData.json';
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import weatherapp from '../assets/weatherapp2.png';
 import cart from '../assets/cart.png';
 import tasks from '../assets/tasks.png';
 import portfolio from '../assets/portfolio.png';
 
 const techIcons = {
-  html: <FaHtml5 />,
-  css: <FaCss3Alt />,
-  js: <FaJsSquare />,
-  react: <FaReact />,
+  html: { icon: <FaHtml5 /> },
+  css: { icon: <FaCss3Alt />},
+  js: { icon: <FaJsSquare /> },
+  react: { icon: <FaReact /> },
 };
 
 const images = {
@@ -23,35 +23,53 @@ const images = {
 
 const Projects = () => {
   return (
-    <div id="projects" className="projects-container bg-dark text-white py-20">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-10 text-gradient">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="projects" className="projects-container">
+      <div className="projects-content">
+        <h2 className="projects-title">My Projects</h2>
+        <p className="projects-subtitle">Here are some of my recent projects that showcase my skills and creativity</p>
+        
+        <div className="projects-grid">
           {data.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-content">
+              <div className="project-image-container">
                 <img
                   src={images[project.image]}
                   alt={project.title}
                   className="project-image"
                 />
-                <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <div className="technologies text-gray-400 mb-4 flex flex-wrap justify-center">
+                <div className="project-overlay">
+                  <div className="project-links">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <FaExternalLinkAlt />
+                    </a>
+                    <a href={project.repo} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="project-info">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+                
+                <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-pill">
-                      {techIcons[tech]}
+                    <span key={index} className="tech-tag">
+                      {techIcons[tech]?.icon}
+                      <span>{techIcons[tech]?.name}</span>
                     </span>
                   ))}
                 </div>
-              </div>
-              <div className="button-row">
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-view">
-                  View Project
-                </a>
-                <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn-repo">
-                  GitHub Repo
-                </a>
+                
+                <div className="project-buttons">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                    Live Demo
+                  </a>
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                    Source Code
+                  </a>
+                </div>
               </div>
             </div>
           ))}

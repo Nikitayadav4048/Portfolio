@@ -1,24 +1,24 @@
 /* skills.css */
 .skills-container {
     background-color: #121212;
-    padding: 50px 20px;
+    padding: 50px 40px;
   }
   
   .skills-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
   .skills-content h2 {
-    color: #ff00ff;
+    color: #ffd700;
     font-family: 'Poppins', sans-serif;
     text-align: center;
   }
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
   }
   
   .skill-card {
@@ -35,13 +35,13 @@
   }
   
   .icon-container i {
-    background: linear-gradient(45deg, #ff00ff, #9900ff);
+    background: linear-gradient(45deg, #ffd700, #ffb347);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .skill-card h3 {
-    color: #ff00ff;
+    color: #ffd700;
     margin-bottom: 10px;
   }
   
@@ -51,11 +51,16 @@
   
   @media (max-width: 768px) {
     .skills-container {
-      padding: 20px 10px;
+      padding: 30px 20px;
     }
   
     .skills-content h2 {
       font-size: 2rem;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
   }
   

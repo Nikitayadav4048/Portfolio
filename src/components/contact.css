@@ -87,7 +87,7 @@
 
 
 .contact-section {
-  padding: 60px 20px;
+  padding: 60px 40px;
   background: linear-gradient(135deg, #1a1a1a, #292929);
   text-align: center;
 }
@@ -99,7 +99,7 @@
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   background: #444;
-  border-left: 3px solid #ff00ff;
+  border-left: 3px solid #ffd700;
 }
 
 .contact-form button {
@@ -130,8 +130,8 @@
   font-weight: bold;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(45deg, #ff00ff, #9900ff);
-  color: white;
+  background: linear-gradient(45deg, #ffd700, #ffb347);
+  color: black;
   cursor: none;
   transition: all 0.3s ease-in-out;
 }
@@ -163,19 +163,19 @@
 }
 
 .social-links a {
-  color: #ff00ff;
+  color: #ffd700;
   font-size: 1.8rem;
   transition: color 0.3s ease-in-out, transform 0.3s;
 }
 
 .social-links a:hover {
-  color: #9900ff;
+  color: #ffb347;
   transform: scale(1.2);
 }
 
 .custom-ok-btn {
-    background: linear-gradient(45deg, #ff00ff, #9900ff);
-    color: white;
+    background: linear-gradient(45deg, #ffd700, #ffb347);
+    color: black;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px;
@@ -183,6 +183,6 @@
 }
 
 .custom-ok-btn:hover {
-    background: linear-gradient(45deg, #9900ff, #ff00ff);
+    background: linear-gradient(45deg, #ffb347, #ffd700);
     transform: scale(1.05);
 }

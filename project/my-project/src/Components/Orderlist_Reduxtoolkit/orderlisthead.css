@@ -1,0 +1,252 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+}
+.orderlistheader h1{
+    font-size: 50px;
+    filter: blur(0);
+}
+.orderlistheader p{
+    font-size: 35px;
+    filter: blur(0);
+}
+.orderlistheader {
+    
+    background-image: url('../../assets/background4.avif');
+  background-size: cover; 
+     background-repeat: no-repeat;  
+     background-position: center;
+}
+.btn-color{
+    background-color: #F8AD42; 
+    color: black;
+}
+.tablecon{
+    margin-bottom: 10%;
+   
+}
+tr:nth-child(odd) {
+    background-color: #F8F5F3;
+  }
+
+    .status-column { 
+        width: 150px; 
+    } */
+
+
+
+    /* 2 */
+
+    /* * {
+        margin: 0%;
+        padding: 0%;
+      }
+      
+      .orderlistheader h1 {
+        font-size: 50px;
+        filter: blur(0);
+      }
+      
+      .orderlistheader p {
+        font-size: 35px;
+        filter: blur(0);
+      }
+      
+      .orderlistheader {
+        background-image: url('../../assets/background4.avif');
+        background-size: cover; 
+        background-repeat: no-repeat;  
+        background-position: center;
+      }
+      
+      .btn-color {
+        background-color: #F8AD42; 
+        color: black;
+      }
+      
+      .tablecon {
+        margin-bottom: 10%;
+      }
+      
+      tr:nth-child(odd) {
+        background-color: #F8F5F3;
+      }
+      
+      .status-column { 
+        width: 150px;  
+      }
+      
+      @media (max-width: 640px) {
+        table thead {
+          display: none;
+        }
+        table, table tbody, table tr, table td {
+          display: block;
+          width: 100%;
+        }
+        table tr {
+          margin-bottom: 15px;
+        }
+        table td {
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+        }
+        table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+      
+ */
+
+
+
+ /* 3 */
+
+ /* * {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .orderlistheader h1 {
+    font-size: 50px;
+    filter: blur(0);
+  }
+  
+  .orderlistheader p {
+    font-size: 35px;
+    filter: blur(0);
+  }
+  
+  .orderlistheader {
+    background-image: url('../../assets/background4.avif');
+    background-size: cover; /* Ensures the image covers the whole area 
+    background-repeat: no-repeat; /* Prevents the image from repeating 
+    background-position: center;
+  }
+  
+  .btn-color {
+    background-color: #F8AD42; 
+    color: black;
+  }
+  
+  .tablecon {
+    margin-bottom: 10%;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #F8F5F3;
+  }
+  
+  /* .status-column { 
+    width: 150px; /* Adjust the width as needed 
+  } */
+  
+  /* .btn-column{
+    width: 100px;
+  } 
+  @media (max-width: 640px) {
+    table thead {
+      display: none;
+    }
+    table, table tbody, table tr, table td {
+      display: block;
+      width: 100%;
+    }
+    table tr {
+      margin-bottom: 15px;
+    }
+    table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  } */
+  
+
+  
+  /* 4 */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .orderlistheader h1 {
+    font-size: 50px;
+    filter: blur(0);
+  }
+  
+  .orderlistheader p {
+    font-size: 35px;
+    filter: blur(0);
+  }
+  
+  .orderlistheader {
+    background-image: url('../../assets/background4.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .btn-color {
+    background-color: #F8AD42;
+    color: black;
+    min-width: 80px; /* Ensure buttons have a consistent minimum width */
+    max-width: 100px; /* Ensure buttons have a consistent maximum width */
+  }
+  
+  .tablecon {
+    margin-bottom: 10%;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #F8F5F3;
+  }
+  
+  .status-column {
+    width: 150px; /* Adjust the width as needed */
+  }
+  
+  @media (max-width: 640px) {
+    table thead {
+      display: none;
+    }
+    table, table tbody, table tr, table td {
+      display: block;
+      width: 100%;
+    }
+    table tr {
+      margin-bottom: 15px;
+    }
+    table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  

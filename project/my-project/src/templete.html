@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+</head>
+<style>
+  body {
+    font-family: "Karla", sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+
+  .brand-wrapper {
+    margin-bottom: 19px;
+  }
+
+  .brand-wrapper .logo {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-card {
+    border: 0;
+    border-radius: 27.5px;
+    overflow: hidden;
+  }
+
+  .login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .login-card .card-body {
+    padding: 85px 0px 0px;
+  }
+
+  .or-spacer-vertical {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 100px;
+    position: relative;
+  }
+
+  .or-spacer-vertical .mask {
+    overflow: hidden;
+    width: 20px;
+    height: 400px;
+  }
+
+  .or-spacer-vertical.right .mask:before {
+    content: '';
+    display: block;
+    margin-left: 20px;
+    width: 20px;
+    height: 100%;
+    border-radius: 12px / 125px;
+    box-shadow: 0 0 8px #007d73;
+  }
+
+  .login-card-description {
+    font-size: 250%;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 23px;
+  }
+
+  .login-card form {
+    max-width: 326px;
+  }
+
+  .login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal;
+  }
+
+  .login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3;
+  }
+
+  .login-card .form-control::-moz-placeholder {
+    color: #919aa3;
+  }
+
+  .login-card .form-control:-ms-input-placeholder {
+    color: #919aa3;
+  }
+
+  .login-card .form-control::-ms-input-placeholder {
+    color: #919aa3;
+  }
+
+  .login-card .form-control::placeholder {
+    color: #919aa3;
+  }
+
+  .login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #f4ac27;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .login-card .login-btn:hover {
+    border: 1px solid #f4ac27;
+    background-color: transparent;
+    color: #000;
+  }
+
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 12px;
+  }
+
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 768px) {
+    .login-card-footer-text {
+      margin-bottom: 24px;
+    }
+
+    .login-card img {
+      margin-top: 25%;
+      height: 80%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .login-card img {
+      display: none;
+    }
+
+    .or-spacer-vertical {
+      display: none;
+    }
+
+    .login-card .card-body {
+      padding: 0px 10% 0px 10%;
+    }
+  }
+
+  .login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3;
+  }
+
+  #login-page {
+    display: block;
+  }
+
+  #signup-page {
+    display: none;
+  }
+
+  #reset-page {
+    display: none;
+  }
+
+  #error-message {
+    display: none;
+    white-space: break-spaces;
+  }
+</style>
+           
+<body>
+
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters d-flex justify-content-center">
+          <!-- <div class="col-md-5">
+            <img height="100%" width="100%"
+              src="https://res.cloudinary.com/dsnjnbtlh/image/upload/v1699263807/3885676_mpdgee.jpg">
+          </div>
+          <div class="or-spacer-vertical right">
+            <div class="mask"></div>
+          </div> -->
+         
+          <div id="login-page" class="col-md-3 ">
+            <div class="card-body">
+              <p class="login-card-description">Login </p>
+
+              <form onsubmit="return false;" method="post">
+                <div class="form-group">
+                  <span id="error-message" class="alert alert-danger"></span>
+
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email address" />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="password" class="sr-only">Password</label>
+                  <input type="password" name="password" id="password" class="form-control" placeholder="***********" />
+                </div>
+                <div> <a href="#d" onclick="resedtFun()" class="forgot-password-link">Forgot password?</a>
+                </div>
+                <div class="captcha-container form-group"></div>
+
+                <button id="btn-login" type="submit" class="btn btn-block login-btn my-4">
+                  Login
+                </button>
+              </form>
+              <p class="login-card-footer-text redirect-btn">
+                Don't have an account?
+                <a href="#=!" onclick="signupFun()" class="text-reset">Sign up here</a>
+              </p>
+            </div>
+          </div>
+          <div id="signup-page" class="col-md-3">
+            <div class="card-body">
+              <p class="login-card-description">Create a new account</p>
+              <form onsubmit="return false;" method="post">
+                <div class="form-group">
+                  <span id="error-message" class="alert alert-danger"></span>
+
+                  <!-- username -->
+                  <label for="username" class="sr-only">Username</label>
+                  <input type="text" name="username" id="username" class="form-control" placeholder="Username" />
+                  
+                  <label for="email2" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email2" class="form-control" placeholder="Email address" />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="new-password" class="sr-only">Password</label>
+                  <input type="password" name="new-password" id="password2" class="form-control"
+                    placeholder="***********" />
+                </div>
+                <div class="form-group">
+                  <label for="user-role" class="sr-only">User Role</label>
+                  <select class="form-control" id="role">
+                    <option>Choose</option>
+                   <option value="customer">Customer</option>
+                    <option value="rider">Rider</option>
+                  </select>
+                </div>
+                <div class="captcha-container form-group"></div>
+
+                <button id="btn-signup" type="submit" class="btn btn-block login-btn mt-5">
+                  Sign Up
+                </button>
+                <p class="login-card-footer-text redirect-btn">
+                  Already have an account?
+                  <a href="#!" onclick="loginFun()" class="text-reset">Login here</a>
+                </p>
+            </div>
+          </div>
+          <div id="reset-page" class="col-md-3">
+            <div class="card-body">
+              <p class="login-card-description">Create a new account</p>
+              <form onsubmit="return false;" method="post">
+                <span id="error-message" class="alert alert-danger"></span>
+
+                <div class="form-group">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="resetemail" class="form-control" placeholder="Email address" />
+                </div>
+                <div class="captcha-container form-group"></div>
+                <button id="btn-reset" type="submit" class="btn btn-block login-btn mt-5">
+                  Reset
+                </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.auth0.com/js/auth0/9.23/auth0.min.js"></script>
+<script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+  function signupFun() {
+    document.querySelector("#signup-page").style.cssText = "display:block;";
+    document.querySelector("#login-page").style.cssText = "display:none;";
+    document.querySelector("#reset-page").style.cssText = "display:none;";
+  }
+
+  function loginFun() {
+    document.querySelector("#signup-page").style.cssText = "display:none;";
+    document.querySelector("#login-page").style.cssText = "display:block;";
+    document.querySelector("#reset-page").style.cssText = "display:none;";
+  }
+
+  function resetFun() {
+    document.querySelector("#signup-page").style.cssText = "display:none;";
+    document.querySelector("#login-page").style.cssText = "display:none;";
+    document.querySelector("#reset-page").style.cssText = "display:block;";
+  }
+
+  window.addEventListener("load", function () {
+    var config = JSON.parse(
+      decodeURIComponent(escape(window.atob("@@config@@")))
+    );
+
+    var leeway = config.internalOptions.leeway;
+    if (leeway) {
+      var convertedLeeway = parseInt(leeway);
+      if (!isNaN(convertedLeeway)) {
+        config.internalOptions.leeway = convertedLeeway;
+      }
+    }
+
+    var params = Object.assign({
+        overrides: {
+          __tenant: config.auth0Tenant,
+          __token_issuer: config.authorizationServer.issuer,
+        },
+        domain: config.auth0Domain,
+        clientID: config.clientID,
+        redirectUri: config.callbackURL,
+        responseType: "code",
+      }, config.internalOptions
+    );
+
+    var triggerCaptcha = null;
+    var webAuth = new auth0.WebAuth(params);
+    var databaseConnection = "Username-Password-Authentication";
+    var captcha = webAuth.renderCaptcha(
+      document.querySelector(".captcha-container"),
+      null,
+      (error, payload) => {
+        if (payload) {
+          triggerCaptcha = payload.triggerCaptcha;
+        }
+      }
+    );
+
+    function login(e) {
+      e.preventDefault();
+      var button = this;
+      var username = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      button.disabled = true;
+      var request = () => {
+        webAuth.login({
+          realm: databaseConnection,
+          username: username,
+          password: password,
+          captcha: captcha.getValue(),
+        }, function (err) {
+          if (err) displayError(err);
+          button.disabled = false;
+        });
+      };
+      if (triggerCaptcha) {
+        triggerCaptcha(request);
+      } else {
+        request();
+      }
+    }
+
+    function signup() {
+      var email = document.getElementById("email2").value;
+      var password = document.getElementById("password2").value;
+      var role = document.getElementById("role").value;
+      var username = document.getElementById("username").value;
+
+      if (!email || !password || role === "Choose" || !username) {
+        alert("Please fill all fields correctly.");
+        return;
+      }
+
+      webAuth.signup({
+        connection: "Username-Password-Authentication",
+        email: email,
+        password: password,
+        username: username,
+        user_metadata: { role: role }
+      }, function (err) {
+        if (err) {
+          console.log("Signup error: ", err.description);
+        } else {
+          alert("Signup successful! Redirecting to login...");
+          fetch('http://localhost:5000/api/users/signup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password, username, role })
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.message === 'User registered successfully') {
+              window.location.href = 'http://localhost:5173/login.html'; // Update this to your login page URL
+            }
+          })
+          .catch(err => {
+            console.error("Error storing user data:", err.message);
+          });
+        }
+      });
+    }
+
+    function displayError(err) {
+      captcha.reload();
+      var errorMessage = document.getElementById("error-message");
+      errorMessage.innerText = err.policy || err.description;
+      errorMessage.style.display = "block";
+    }
+
+    function resetPassword(e) {
+      e.preventDefault();
+      var email = document.getElementById('resetemail').value;
+      if (!email) {
+        alert("Please enter your email.");
+        return;
+      }
+      webAuth.changePassword({
+        connection: databaseConnection,
+        email: email
+      }, function (err, resp) {
+        if (err) {
+          console.log(err.message);
+          alert(err.message);
+        } else {
+          alert(resp);
+        }
+      });
+    }
+
+    document.getElementById("btn-login").addEventListener("click", login);
+    document.getElementById("btn-signup").addEventListener("click", signup);
+    document.getElementById("btn-reset").addEventListener("click", resetPassword);
+  });
+</script>
+
+</body>
+
+</html>
