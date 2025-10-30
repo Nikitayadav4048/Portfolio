@@ -1,0 +1,18 @@
+.footer {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #fff;
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+  color: #888;
+  font-size: 1rem;
+}

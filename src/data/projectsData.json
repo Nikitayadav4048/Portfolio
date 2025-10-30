@@ -25,5 +25,34 @@
     "link": "https://yadavnikita-tasktrack.netlify.app/",
     "repo": "https://github.com/Nikitayadav4048/TaskTrack",
     "technologies": ["react", "html", "css", "js"]
+  },
+   {
+    "id": 8,
+    "title": "Dynamic Kanban Board",
+    "description": "Dynamic Kanban Board – Built a drag-and-drop task manager with real-time updates and role-based access for productivity teams.",
+    "image": "Dynamic_Board.png",
+    "link": "https://dynamic-kanban-board.vercel.app/",
+    "repo": "https://github.com/Nikitayadav4048/Dynamic-Kanban-Board.git",
+    "technologies": ["react", "html", "css", "js"]
+  },
+  {
+    "id": 6,
+    "title": "AiIntegratortech",
+    "description": "Created a responsive, multi-page website for AI Integratorz using MERN stack. Integrated service sections, client logos, and contact forms to support business outreach.",
+    "image": "Company_Website.png",
+    "link": "https://aiintegratortech-5i48.vercel.app/",
+    "repo": "https://github.com/Nikitayadav4048/AIINTEGRATORTECH.git",
+    "technologies": ["react", "html", "css", "js" , "nodeJS" , "ExpressJS" , "MongoDB"]
+  },
+  {
+    "id": 7,
+    "title": "NGO_Website",
+    "description": "Orbosis Foundation Website – Created a responsive NGO site using MERN stack showcasing women empowerment programs, impact metrics, and volunteer registration.",
+    "image": "NGO-Website.png",
+    "link": "https://orbosis-ngo-frontend-hazel.vercel.app/",
+    "repo": "https://github.com/Nikitayadav4048/OrbosisNGO-Frontend",
+    "repo2": "https://github.com/Nikitayadav4048/OrbosisNGO-backend",
+    "technologies": ["react", "html", "css", "js" , "nodeJS" , "ExpressJS" , "MongoDB"]
   }
+ 
 ]

@@ -1,17 +1,24 @@
 import React from 'react';
 import './project.css';
 import data from '../../src/data/projectsData.json';
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaExternalLinkAlt, FaGithub, FaNodeJs } from 'react-icons/fa';
+import { SiExpress, SiMongodb } from 'react-icons/si';
 import weatherapp from '../assets/weatherapp2.png';
 import cart from '../assets/cart.png';
 import tasks from '../assets/tasks.png';
 import portfolio from '../assets/portfolio.png';
+import companyWebsite from '../assets/Company_Website.png';
+import ngoWebsite from '../assets/NGO-Website.png';
+import dynamicBoard from '../assets/Dynamic_Board.png';
 
 const techIcons = {
-  html: { icon: <FaHtml5 /> },
-  css: { icon: <FaCss3Alt />},
-  js: { icon: <FaJsSquare /> },
-  react: { icon: <FaReact /> },
+  html: <FaHtml5 />,
+  css: <FaCss3Alt />,
+  js: <FaJsSquare />,
+  react: <FaReact />,
+  nodeJS: <FaNodeJs />,
+  ExpressJS: <SiExpress />,
+  MongoDB: <SiMongodb />,
 };
 
 const images = {
@@ -19,6 +26,9 @@ const images = {
   'cart.png': cart,
   'tasks.png': tasks,
   'portfolio.png': portfolio,
+  'Company_Website.png': companyWebsite,
+  'NGO-Website.png': ngoWebsite,
+  'Dynamic_Board.png': dynamicBoard,
 };
 
 const Projects = () => {
@@ -56,8 +66,7 @@ const Projects = () => {
                 <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
                     <span key={index} className="tech-tag">
-                      {techIcons[tech]?.icon}
-                      <span>{techIcons[tech]?.name}</span>
+                      {techIcons[tech]}
                     </span>
                   ))}
                 </div>

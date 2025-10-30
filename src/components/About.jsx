@@ -21,22 +21,41 @@ const About = () => {
         </div>
 
         <div className="about-text lg:w-2/3">
-          <h2 className="text-5xl font-bold mb-4">About Me</h2>
-          <p className="text-gray-400 text-lg">
-            My name is <span className="text-highlight">Nikita Yadav</span> and I am currently pursuing my Bachelor of Computer Applications (BCA), 3rd year, at Sant Singaji Institute of Science and Management, Sandalpur.
-          </p>
-          <p className="text-gray-400 text-lg mt-4">
-            I am passionate about web development and have been learning various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Tailwind, Bootstrap, Java, SQL, VS Code, Git, GitHub, and DBMS. My goal is to leverage these skills to create seamless and interactive web experiences.
-          </p>
-          <p className="text-gray-400 text-lg mt-4">
-            As I continue my journey, I look forward to acquiring more knowledge and honing my abilities to make meaningful contributions to the tech industry.
+          <h2 className="about-title">About Me</h2>
+          
+          <div className="about-intro">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Hi! I'm <span className="text-highlight font-semibold">Nikita Yadav</span>, a passionate MERN stack developer currently pursuing my Bachelor of Computer Applications (BCA) in 3rd year at Sant Singaji Institute of Science and Management, Sandalpur.
+            </p>
+          </div>
+
+          <div className="about-skills mt-6">
+            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              I specialize in building modern, scalable web applications using the MERN stack (MongoDB, Express.js, React, Node.js). My expertise extends to various technologies including HTML, CSS, JavaScript, Tailwind, Bootstrap, Java, SQL, and development tools like VS Code, Git, and GitHub.
+            </p>
+          </div>
+
+          <div className="about-stats flex gap-8 my-6">
+            <div className="stat-item">
+              <div className="stat-number">6+</div>
+              <div className="stat-label">Projects</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">2+</div>
+              <div className="stat-label">Years Learning</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">10+</div>
+              <div className="stat-label">Technologies</div>
+            </div>
+          </div>
+
+          <p className="text-gray-300 text-lg leading-relaxed mb-6">
+            I'm dedicated to creating exceptional user experiences and writing clean, efficient code. Always eager to learn new technologies and contribute to meaningful projects in the tech industry.
           </p>
 
-          <a
-            href="#contact"
-            className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-bold rounded-lg hover:bg-gradient-to-l transition-all"
-          >
-            Contact
+          <a href="#contact" className="contact-btn">
+            Let's Connect
           </a>
         </div>
       </div>

@@ -43,6 +43,9 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
   border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -116,6 +119,13 @@
 
 .project-info {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-buttons {
+  margin-top: auto;
 }
 
 .project-title {

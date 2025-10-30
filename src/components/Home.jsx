@@ -63,41 +63,37 @@ const Home = () => {
       )}
 
       {/* Hero Section */}
-      <div
-        id="home"
-        className="home-container flex flex-col items-center justify-center min-h-screen text-center text-white gap-6 p-6 animate-fadeIn"
-      >
-        <h1 className="text-5xl lg:text-6xl font-bold text-gradient animate-slideIn">
-          Hello, I'm <span className="text-gradient">Nikita Yadav</span>
-        </h1>
-        <h2 className="text-3xl font-semibold animate-pulse">A Front-End Developer</h2>
-        <p className="max-w-xl text-lg text-gray-300 leading-relaxed animate-fadeIn delay-300">
-          I'm a passionate web developer who enjoys creating clean and responsive user interfaces
-          using modern technologies like React, Tailwind, and JavaScript.
-        </p>
-        <div className="flex gap-6 mt-6 justify-center">
-          <a
-            href="https://github.com/Nikitayadav4048"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 text-2xl transition hover:text-highlight animate-float"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nikitayadav4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 text-2xl transition hover:text-highlight animate-float delay-200"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="mailto:nikitayadav4048@gmail.com"
-            className="text-gray-400 text-2xl transition hover:text-highlight animate-float delay-400"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
+      <div id="home" className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Hi, I'm <span className="name-highlight">Nikita</span>
+          </h1>
+          <h2 className="hero-subtitle">MERN Stack Developer</h2>
+          <p className="hero-description">
+            I create modern, responsive web applications using MongoDB, Express.js, React, and Node.js. 
+            Passionate about clean code and exceptional user experiences.
+          </p>
+          
+          <div className="hero-actions">
+            <a href="#projects" className="cta-button primary">View My Work</a>
+            <a href="/Nikita-Resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-button secondary">View Resume</a>
+          </div>
+          
+          <div className="social-links">
+            <a href="https://github.com/Nikitayadav4048" target="_blank" rel="noopener noreferrer" className="social-link">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nikitayadav4" target="_blank" rel="noopener noreferrer" className="social-link">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:nikitayadav4048@gmail.com" className="social-link">
+              <i className="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div className="scroll-indicator">
+          <a href="#about"><div className="scroll-arrow"></div></a>
         </div>
       </div>
     </>

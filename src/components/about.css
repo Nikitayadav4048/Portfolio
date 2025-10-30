@@ -1,6 +1,7 @@
 .about-container {
-    background: black;
-    padding: 50px 40px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    padding: 80px 40px;
+    min-height: 100vh;
 }
 
 .about-content {
@@ -13,8 +14,13 @@
     margin-left: 30px;
 }
 
-.about-text h2 {
-    color: #ffd700;
+.about-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #ffd700, #ffb347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -55,27 +61,46 @@
     opacity: 0.8;
 }
 
-.contact-button {
-    background: linear-gradient(45deg, #ff00ff, #9900ff);
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s, transform 0.3s;
-    -webkit-transition: background 0.3s, transform 0.3s;
-    -moz-transition: background 0.3s, transform 0.3s;
-    -ms-transition: background 0.3s, transform 0.3s;
-    -o-transition: background 0.3s, transform 0.3s;
+.about-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-.contact-button:hover {
-    background-color: linear-gradient(45deg, #9900ff, #ff00ff);
-    color: white;
-    transform: translateY(-3px);
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, #ffb347 0%, #ffd700 100%);
+    color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -104,16 +129,25 @@
 }
 
 @media (max-width: 768px) {
-    .about-text h2 {
-        font-size: 2rem;
+    .about-title {
+        font-size: 2.5rem;
     }
 
     .about-text p {
         font-size: 1rem;
     }
 
-    .contact-button {
-        width: 90%;
-        font-size: 1rem;
+    .about-stats {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .contact-btn {
+        width: 200px;
+        text-align: center;
     }
 }
